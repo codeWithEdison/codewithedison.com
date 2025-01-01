@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { 
   Download, 
   ExternalLink, 
-  ChevronDown,
+  // ChevronDown,
   Code,
   Brain,
   Database,
@@ -291,7 +291,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5 }}
@@ -314,7 +314,7 @@ export default function Hero() {
             <span className="text-sm text-violet-500">Scroll to explore</span>
           </motion.div>
         </FloatingCard>
-      </motion.div>
+      </motion.div> */}
     </section>
   )
 }

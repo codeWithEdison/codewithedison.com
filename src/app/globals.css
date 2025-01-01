@@ -28,4 +28,51 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-}   
+}  
+
+/* SCROLL BAR CSS: */
+
+
+/* Light Mode Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(200, 200, 200);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(75, 174, 255);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(54, 144, 218);
+  border-radius: 8px;
+}
+
+/* Dark Mode Scrollbar */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #1f2937; /* Tailwind 'gray-800' */
+}
+
+.dark ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(55, 65, 81); /* Tailwind 'gray-700' */
+  border-radius: 8px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgb(37, 129, 235); /* Tailwind 'blue-600' */
+  border-radius: 8px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgb(29, 113, 216); /* Tailwind 'blue-700' */
+  border-radius: 8px;
+}
