@@ -1,5 +1,5 @@
 
-const { fontFamily } = require('tailwindcss/defaultTheme')
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -51,7 +51,9 @@ module.exports = {
     },
   },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     require('@tailwindcss/typography'),
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     require('@tailwindcss/forms'),
   ],
 }
