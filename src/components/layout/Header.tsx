@@ -127,7 +127,7 @@ export default function Navbar() {
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 group flex items-center gap-2 
                     ${activeSection === href.substring(1) 
                       ? 'text-white' 
-                      : 'text-gray-300 hover:text-white'}`}
+                      : 'text-gray-400 hover:text-white'}`}
                 >
                   {/* Background decoration */}
                   <div className={`absolute inset-0 rounded-lg transition-all duration-300 ${
